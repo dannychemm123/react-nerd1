@@ -65,6 +65,36 @@ function App() {
 }
 
 
+typing
+
+function App() {
+  const [inputValue, setInputValue] = useState("")
+  const changeInputValue= (event)=>{
+    setInputValue(event.target.value);
+    
+    
+  }
+     
+  return (
+    <div className="App" > 
+    <input type='text' onChange={changeInputValue}/>
+    {inputValue}
+    </div>
+  );
+}
+  function App() {
+ const [showText, setShowText] = useState(false)
+ const handleShowText = () => {setShowText(!showText)
+ }
+     
+  return (
+    <div className="App" > 
+      <button onClick={handleShowText}>Show/Hide </button>
+      
+      {showText && <h1>My name is Daniel Ntiamoah</h1>}
+    </div>
+  );
+
 export default App;
 
     */}
